@@ -1,0 +1,7 @@
+USE nest;
+CREATE TABLE IF NOT EXISTS roles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL
+);
+
+CREATE INDEX idx_roles_name ON roles (name);

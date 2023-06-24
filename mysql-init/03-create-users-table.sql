@@ -1,0 +1,12 @@
+USE nest;
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(500) NOT NULL,
+  name VARCHAR(50),
+  bossId INT,
+  online BOOLEAN DEFAULT FALSE,
+  role VARCHAR(50) NOT NULL,
+  FOREIGN KEY (bossId) REFERENCES users (id),
+  FOREIGN KEY (role) REFERENCES roles (name)
+);
