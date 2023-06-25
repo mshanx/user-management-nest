@@ -56,3 +56,21 @@ body
     "id": Number
 }
 ```
+
+## Predefined users
+You may use these users for some of your testing scenarios.
+
+```
++----+-------------------+---------------+-----------+--------+----------+
+| id | email             | password      | name      | bossId | role     |
++----+-------------------+---------------+-----------+--------+----------+
+| 1  | admin@example.com | adminpassword | Admin User| NULL   | admin    |
+| 2  | boss@example.com  | bosspassword  | Boss User | NULL   | boss     |
+| 3  | user1@example.com | password1     | User 1    | NULL   | regular  |
+| 4  | user2@example.com | password2     | User 2    | 2      | regular  |
+| 5  | user3@example.com | password3     | User 3    | 2      | regular  |
+| 6  | user4@example.com | password4     | User 4    | 3      | boss     |
+| 7  | user5@example.com | password5     | User 5    | 6      | regular  |
++----+-------------------+---------------+-----------+--------+----------+
+
+```
