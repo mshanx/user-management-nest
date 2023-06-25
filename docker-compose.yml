@@ -21,7 +21,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: server-nestjs
+    container_name: user-management-nest
     restart: unless-stopped
     depends_on:
       - mysql-db
@@ -33,9 +33,6 @@ services:
       - DB_PORT=$MYSQLDB_DOCKER_PORT
     ports:
       - $APP_LOCAL_PORT:$APP_DOCKER_PORT
-    volumes:
-      - .:/app
-      - /app/node_modules
     networks:
       - default
 

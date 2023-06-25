@@ -6,4 +6,4 @@ COPY tsconfig*.json ./
 RUN yarn install
 COPY . .
 RUN yarn run build
-CMD ["node", "dist/app/src/main.js"]
+CMD ["node", "dist/src/main.js"]
