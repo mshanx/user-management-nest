@@ -53,7 +53,7 @@ headers
 body
 
 {
-    "id": Number
+    "id": id of new boss: <Number>
 }
 ```
 
